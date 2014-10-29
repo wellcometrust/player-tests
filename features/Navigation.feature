@@ -24,7 +24,7 @@ Feature: In order to view image in a digital item in a linear sequence
     When they click the "Previous" arrow button
     Then the content of the page 1 is displayed to the user
 
-  Scenario: Viewe first page with Previous button disabled
+  Scenario: Viewer first page with Previous button disabled
     Given The user is viewing the Viewer on its very first page
     Then the Previous arrow button is disabled
 
