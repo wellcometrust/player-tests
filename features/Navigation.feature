@@ -3,7 +3,7 @@ Feature: In order to view image in a digital item in a linear sequence
          I want to navigate through digital images in sequence
 
   Scenario: Navigating to the next page
-    Given The user is viewing the Viewer on page 1
+    Given the user is viewing the Viewer on page 1
     When they click the "Next" arrow button
     Then the content of the page 2 is displayed to the user
 
@@ -31,3 +31,8 @@ Feature: In order to view image in a digital item in a linear sequence
   Scenario: Viewer last page with Next button disabled
     Given the user is viewing the Viewer in its last page
     Then the Next arrow is disabled
+
+  Scenario: Changing page and label
+    Given the user is viewing the Viewer
+    When they go to the page 2
+    Then the image is labeled with page 2
